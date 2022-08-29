@@ -10,4 +10,4 @@ public:
     int reverseDigit(int value);
     string reverseString(string letters);
 };
-#endif //REVERSE_H
+#endif 
