@@ -8,34 +8,36 @@ int main() {
     Reverse R1;
     Truckloads T1;
     EfficientTruckloads E1;
-//-----------------------------------------------------
-    int R01;
-    R01 = R1.reverseDigit(11900);
-    cout << R01 << endl;
-    string R02, R03;
-    R02 = R1.reverseString("tttt");
-    R03 = R1.reverseString("appa");
 
-//-----------------------------------------------------
-    int T01, T02, T03, T04, T05;
-    T01 = T1.numTrucks(10,2);
-    T02 = T1.numTrucks(17,3);
-    T03 = T1.numTrucks(15,3);
-    T04 = T1.numTrucks(1024,5);
-    cout << T01 << endl;
-    cout << T02 << endl;
-    cout << T03 << endl;
-    cout << T04 << endl;
+    int num;
+    string str;
+    int n1, n2;
+    cin >> num >> str;
 
-//-----------------------------------------------------
-    int e1, e2, e3, e4;
-    e1 = E1.numTrucks(10,2);
-    e2 = E1.numTrucks(17,3);
-    e3 = E1.numTrucks(15,1);
-    e4 = E1.numTrucks(1024,5);
-    cout << e1 << endl;
-    cout << e2 << endl;
-    cout << e3 << endl;
-    cout << e4 << endl;
+    num = R1.reverseDigit(num);
+    str = R1.reverseString(str);
+    if (num == 0)  cout << "ERROR" << " ";
+    else
+        cout << num << " " << str << " ";
+
+    int pagm_num1 = -1, pagm_num2 = -1;
+    cin >> n1;
+    if (cin.fail())
+        cout << "ERROR" << " ";
+    else
+        pagm_num1 = n1;
+    cin >> n2;
+    if (cin.fail())
+        cout << "ERROR" << " ";
+    else
+        pagm_num2 = n2;
+    
+    if (pagm_num1!=-1&& pagm_num2!=-1)
+    {
+        int ans = E1.numTrucks(pagm_num1, pagm_num2),ans2 = T1.numTrucks(pagm_num1, pagm_num2);
+        cout << ans << " " << ans2 << " " << endl;
+    }
+
+
     return 0;
 }
