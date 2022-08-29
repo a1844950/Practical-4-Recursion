@@ -1,9 +1,5 @@
-//
-// Created by Satori on 2022/8/26.
-//
-
-#ifndef WEEK4_EFFICIENTTRUCKLOADS_H
-#define WEEK4_EFFICIENTTRUCKLOADS_H
+#ifndef EFFICIENTTRUCKLOADS_H
+#define EFFICIENTTRUCKLOADS_H
 
 #include <vector>
 
@@ -17,4 +13,4 @@ private:
 };
 
 
-#endif //WEEK4_EFFICIENTTRUCKLOADS_H
+#endif //EFFICIENTTRUCKLOADS_H
