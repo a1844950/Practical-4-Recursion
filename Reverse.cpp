@@ -11,14 +11,10 @@ string Reverse::reverseString(string letters){
 }
 
 int Reverse::reverseDigit(int value){
-
-    if (value <= 0||value < INT_MIN / 10 || value > INT_MAX / 10) {
-        return 0;
-    }
-    if(value<10) {
-        return value;
-    }
+    if(value<10) {return value;}
     int len=0;
     for (int i=value; i; i/=10) len++;
     return value%10*(int)pow(10, len-1) + reverseDigit(value/10);
+
 }
+
