@@ -1,7 +1,3 @@
-//
-// Created by Satori on 2022/8/26.
-//
-
 #include "Truckloads.h"
 #include <iostream>
 using namespace std;
