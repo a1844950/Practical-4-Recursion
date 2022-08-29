@@ -1,6 +1,5 @@
 #include "Reverse.h"
 
-
 string Reverse::reverseString(string letters){
     size_t number_characters= letters.size();
     if(number_characters== 1)
