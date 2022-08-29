@@ -1,9 +1,5 @@
-//
-// Created by Satori on 2022/8/26.
-//
-
-#ifndef WEEK4_TRUCKLOADS_H
-#define WEEK4_TRUCKLOADS_H
+#ifndef TRUCKLOADS_H
+#define TRUCKLOADS_H
 
 class Truckloads {
 public:
@@ -11,4 +7,4 @@ public:
 };
 
 
-#endif //WEEK4_TRUCKLOADS_H
+#endif //TRUCKLOADS_H
